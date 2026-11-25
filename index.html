@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onda Viva</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+    <span class="en-vivo">● EN VIVO · EMISORA DIGITAL</span>
+    <h1>
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#38CFC3" stroke-width="2.5" stroke-linecap="round" style="vertical-align: middle; margin-right: 8px;">
+        <path d="M2 10v4M6 6v12M10 3v18M14 6v12M18 10v4M22 12v0"/>
+      </svg>
+      Onda Viva
+    </h1>
+    <p>Bitacora de Relevos al Aire</p>
+  </header>
+<main>
+    <section class="tarjeta">
+        <h2>Registrar nuevo relevo</h2>
+        <form id="formulario-relevo">
+            <label>fecha:</label>
+            <input type="date" id="fecha" required>
+            <label>Programa:</label>
+            <input type="text" id="programa" placeholder="Ej: Despierta Onda" required>
+            <label>Hora inicio:</label>
+            <input type="time" id="hora-inicio" required>
+            <label>Hora fin:</label>
+            <input type="time" id="hora-fin" required>
+            <label>Titular (quien falta):</label>
+            <input type="text" id="titular" placeholder="Ej: Laura Gomez" required>
+            <label>Relevo (quien cubre):</label>
+            <input type="text" id="relevo" placeholder=" Ej: Andres Pinto">
+            <button type="button" id="boton-sugerir">Sugerir otro relevo</button>
+            <label>Estado:</label>
+            <select id="estado">
+            <option value="Pendiente">Pendiente</option>
+            <option value="Cubierto">Cubierto</option>
+            <option value="Sin cubrir">Sin cubrir</option>
+            </select>
+            <label>Motivo:</label>
+            <select id="motivo">
+            <option value="Enfermedad">Enfermedad</option>
+            <option value="Cita medica">Cita medica</option>
+            <option value="Permiso">Permiso</option>
+            <option value="Calamidad">Calamidad</option>
+            <option value="Otro">Otro</option>
+            </select>
+            <label>Observaciones:</label>
+            <input type="text" id="observaciones" placeholder="Ej: Aviso a las 6:30 a. m.">
+            <button type="submit">Guardar relevo</button>
+            
+        </form> |
+
+        <section class="tarjeta">
+            <h2>Contador de relevos</h2>
+            <div id="contador-relevos"></div> 
+        </section>
+            <section class="tarjeta">
+                <h2>Bitacora de relevos</h2>
+                <input type="text" id="buscador" placeholder="Buscar por presentador, programa o estado...">
+<button id="boton-csv" type="button">Exportar a Excel (CSV)</button>
+                <button id="boton-limpiar" type="button">Borrar datos de ejemplo</button>
+               <div id="lista-relevos"></div>
+               </section>
+               <section class="tarjeta">
+      <h2>Administrar equipo</h2>
+      <input type="text" id="nuevo-presentador" placeholder="Nombre del nuevo presentador...">
+      <button type="button" id="boton-agregar-pres">Agregar presentador</button>
+      <div id="lista-presentadores"></div>
+    </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

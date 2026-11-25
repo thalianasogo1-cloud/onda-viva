@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #EEE9FF;
+  color: #34205F;
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(120deg, #34205F 0%, #7654D6 65%, #38CFC3 100%);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 36px 15px;
+  border-bottom: 4px solid #38CFC3;
+  box-shadow: 0 6px 20px rgba(52, 32, 95, 0.25);
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 10px 0 4px 0;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.en-vivo {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.16);
+  border: 1px solid #38CFC3;
+  color: #38CFC3;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 1.5px;
+}
+
+main {
+  max-width: 760px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.tarjeta {
+  background-color: #FFFFFF;
+  border: 1px solid #d9ceff;
+  border-top: 5px solid #7654D6;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(52, 32, 95, 0.08);
+}
+
+h2 {
+  color: #34205F;
+  margin-top: 0;
+  text-align: center;
+  border-bottom: 2px solid #EEE9FF;
+  padding-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+  color: #34205F;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 2px solid #d9ceff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #faf8ff;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #38CFC3;
+  background-color: #FFFFFF;
+}
+
+button {
+  background: linear-gradient(135deg, #7654D6, #34205F);
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-top: 18px;
+  margin-right: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(56, 207, 195, 0.75);
+}
+/* Etiquetas de color para cada estado */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.estado-pendiente { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+.estado-cubierto { background-color: #d4f7f4; color: #0f5e58; border: 1px solid #38CFC3; }
+.estado-sin-cubrir { background-color: #f8d7da; color: #842029; border: 1px solid #f5c2c7; }

@@ -1,9 +1,9 @@
 // 1. Presentadores de Onda Viva y datos de ejemplo iniciales
-const basePresentadores = ["Laura Gomez", "Andres Pinto", "Carlos Ruiz", "Sofia Martinez", "Mateo Rios", "Valentina Diaz"];
+const basePresentadores = ["Mariana Restrepo", "Sebastián Cardona", "Salomé Henao", "Tomás Giraldo", "Manuela Jaramillo", "Juan José Vélez"];
 let presentadores = JSON.parse(localStorage.getItem("presentadores_onda")) || basePresentadores;
 const datosEjemplo = [
-  { fecha: "2026-11-24", programa: "Despierta Onda", inicio: "06:00", fin: "08:00", titular: "Laura Gomez", relevo: "Andres Pinto", estado: "Cubierto", motivo: "Cita medica", obs: "Aviso temprano" },
-  { fecha: "2026-11-25", programa: "Tarde Musical", inicio: "14:00", fin: "16:00", titular: "Carlos Ruiz", relevo: "Sin asignar", estado: "Pendiente", motivo: "Permiso", obs: "Buscando reemplazo" }
+  { fecha: "2026-11-25", programa: "Despierta Onda", inicio: "06:00", fin: "08:00", titular: "Mariana Restrepo", relevo: "Sebastián Cardona", estado: "Cubierto", motivo: "Cita médica", obs: "Aviso temprano" },
+  { fecha: "2026-11-26", programa: "Tarde Musical", inicio: "14:00", fin: "16:00", titular: "Salomé Henao", relevo: "Sin asignar", estado: "Pendiente", motivo: "Permiso", obs: "Buscando reemplazo" }
 ];
 
 // Cargar registros guardados o usar los de ejemplo
